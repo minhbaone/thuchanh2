@@ -1,5 +1,5 @@
 #include<iostream>
-#include<algorithm>
+#include<bits/stdc++.h>
 
 using namespace std;
 
@@ -8,9 +8,12 @@ int main() {
     cout << "Nhap lan luot  3 so: ";
     cin >> a>>b>> c;
     int a[10];
-    for (int i=1 ; i<=3 ; i++){
-        cin >> a[i];
+    for (int i=0 ; i<3; i++){
+        a[i]=i;
     }
-    sort ( a+1 ,a+ 3);
+    sort (a , a+3);
+    for(int i=0 ; i<3 ; i++){
+        cout << a[i] << " ";
+    }
     return 0;
 }
