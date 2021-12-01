@@ -11,9 +11,9 @@ float nhapkm( float &km){
 void tinhtien(float km){
     if (km<=1) {
         cout <<"So tien phai tra: "<< long(15000*km) ;
-    } else if(2<=km && km<=6){
+    } else if(2<=km && km<=5){
         cout <<"So tien phai tra: "<< long(15000*1 + (km-1)*13500);
-    } else if(km>=6  && km<=120){
+    } else if(km>=5  && km<=120){
         cout <<"So tien phai tra: " << long(15000*1 + 5*13500 + (km-6)*11000);
     } else {
         cout <<"So tien phai tra: " << long((15000*1 + 5*13500 + (km-6)*11000)*0.9) ;
