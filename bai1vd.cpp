@@ -6,9 +6,7 @@ void nhapso(int &a ,int &b, int &c){
     cout << "Nhap lan luot 3 so: ";
     cin >> a>>b>>c;
 }
-void sapxep(){
-    int a , b, c;
-    nhapso(a,b,c);
+void sapxep(int &a , int &b, int &c){
     int arr[3]= {a,b,c};
     sort (arr , arr +3);
     cout << "3 so tang dan la: ";
@@ -17,6 +15,8 @@ void sapxep(){
     }
 }
 int main() {
-    sapxep();
+    int a,b,c;
+    nhapso(a,b,c);
+    sapxep(a,b,c);
     return 0;
 }
