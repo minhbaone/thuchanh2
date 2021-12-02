@@ -2,24 +2,27 @@
 #include<iostream>
 
 using namespace std;
-void nhapso(int &a ,int &b, int &c){
+
+int main() {
+    int a,b,c,temp=0;
     cout << "Nhap lan luot 3 so: ";
     cin >> a>>b>>c;
-}
-void sapxep(int &x , int &y){
-    float temp=0;
-    if(x>=y){
-        temp =x;
-        x=y;
-        y=temp;
+    if(a>=b){
+        temp =a;
+        a=b;
+        b=temp;
     }
-}
-int main() {
-    int a,b,c;
-    nhapso(a,b,c);
-    sapxep(a,b);
-    sapxep(a,c);
-    sapxep(b,c);
+    if(a>=c){
+        temp =a;
+        a=c;
+        c=temp;
+    }
+    if(b>=c){
+        temp =b;
+        b=c;
+        c=temp;
+    }
+    
     cout << "3 so tang dan la: " << a<< " " << b << " " << c ;
     return 0;
 }
