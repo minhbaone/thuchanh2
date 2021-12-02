@@ -2,13 +2,12 @@
 #include<math.h>
 
 using namespace std;
-float nhapkm( float &km){
+
+int main() {
+    float km;
     do {cout<< "Nhap so km: ";
     cin >> km;
     } while  (km<=0);
-    return km;
-}
-void tinhtien(float km){
     if (km<=1) {
         cout <<"So tien phai tra: "<< long(15000*km) ;
     } else if(2<=km && km<=5){
@@ -18,10 +17,6 @@ void tinhtien(float km){
     } else {
         cout <<"So tien phai tra: " << long((15000*1 + 5*13500 + (km-6)*11000)*0.9) ;
     }
-}
-int main() {
-    float km;
-    nhapkm(km);
-    tinhtien(km);
+    
 	return 0;
 }

@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-void nhap(int &a , int &b, int &c){
+
+int main(){
+    int a,b,c;
     do {
     cout << "Nhap 3 canh tam giac: ";
     cin >> a >> b >> c;
     } 
     while (a <0 || b<0 || c<0);
-}
-void kiemtra(int a , int b , int c){
     if(a+b>c && b+c>a && a+c>b ){
         if( a==b && b==c){
             cout << "Day la tam gia deu";
@@ -21,11 +21,5 @@ void kiemtra(int a , int b , int c){
     } else {
         cout << "Do khong phai 3 canh cua tam giac!!!" ;
     }
-}
-
-int main(){
-    int a,b,c;
-    nhap(a,b,c);
-    kiemtra(a,b,c);
     return 0;
 }
